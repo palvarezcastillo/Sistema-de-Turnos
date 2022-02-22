@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*Codigo para el Menu*/
+
+body {
+    background-color: #219F94;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu__items {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    border-bottom: 1px solid #ffffff;
+    background-color: #5a6978;
+}
+
+.menu__items li a {
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18;
+    display: block;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+}
+
+.logo {
+    margin-left: 30px;
+    color: #ffffff ;
+    font-weight: lighter;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menu__items li:hover, li.active {
+    background-color: #343f4b;
+}
+
+/*.menu {
+    background-color:#5a6978;
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ffffff;
+    box-shadow: 5px 0 10px #219F94;
+    }
+
+.logo {
+    color: #ffffff ;
+    font-weight: lighter;
+    font-weight: bold;
+    text-align: start;
+}
+.menu__items{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+    text-align: center;
+}
+.menu__items li {
+border-radius: 3px;
+margin: 0 5px;
+}
+.menu__items li a {
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18;
+    display: block;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.menu__items li:hover, li.active {
+    background-color: #343f4b;
+}
+.menu__btn{
+    margin-right: 30px;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+/*Codigo para el Calendario*/
+
+
+.contenedor {
+    display: grid; /*inicio grid en el contenedor padre*/
+    grid-template-columns: 200px 200px 200px 200px 200px; /*creo 5 columnas de 200px de ancho*/
+    grid-template-rows: 200px 200px 200px 200px 200px; /*creo 5 filas de 200px de ancho*/
+    justify-content: space-between;
+    gap: 15px; /*le marco a la grilla que este cada modulo separado por 15px de ancho*/
+    justify-items: center; /*hago que el contenido de cada modulo tenga su contenido centrado*/
+    font-size: 18px;
+}
+
+.contenedor__rango {
+    background-color: #5a6978;
+    border: solid 5px #5a6978;
+    border-radius: 3px;
+    height: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.contenedor__tipo {
+    background-color: #5a6978;
+    border: solid 5px #5a6978;
+    border-radius: 3px;
+    height: 20px;
+    font-size: 18px;
+}
+
+/*Media Queries para tablet */
+
+@media screen and (max-width:750px){
+    .contenedor {
+        grid-template-columns: 100px 100px 100px 100px 100px; 
+        grid-template-rows: 100px 100px 100px 100px 100px; 
+    }
+
+
+}
+/*Media queries para tamaños de celular */
+@media screen and (max-width:420px) {
+    .contenedor {
+        grid-template-columns: 80px 80px 80px 80px 80px; /*cambio a que solo haya 1 columna*/
+        grid-template-rows: 80px 80px 80px 80px 80px; /*cambio a que hayan 9 filas*/
+    }
+
+    .menu__items li a {
+        font-size: 10;
+    }
+}
+
+/*Media queries para tamaños de celular */
+
+footer {
+    display: grid;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(52,63,75);
+    border-top: 2px solid #fff;
+    text-transform: uppercase;
+    color: #ffffff;
+    }
